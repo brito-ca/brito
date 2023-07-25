@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "brito",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/brito-ca/brito.git",
+  "author": "Marcelo <glacial@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "volta": {
+    "node": "18.16.1"
+  }
+}

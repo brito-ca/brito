@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "mobile": "yarn workspace mobile dev",
-    "website": "yarn workspace website dev"
+    "website": "yarn workspace website dev",
+    "web": "yarn website"
   },
   "volta": {
     "node": "18.16.1"

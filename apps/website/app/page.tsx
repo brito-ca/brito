@@ -1,8 +1,9 @@
 import { Logo } from '@/components';
+import { styles } from '@brito/styles';
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-center'>
+    <main className={styles.container}>
       <Logo />
       <p className='p-4 text-red-600'>Comming soon!</p>
     </main>

@@ -25,11 +25,34 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+
+# @generated: @expo/next-adapter@3.1.10
+/.expo/*
+# Expo Web
+/web-build/*
+# Expo Native
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+# Next.js
+/.next/*
+/out/
+# Next.js production
+/build/
+# Next.js dependencies
+/.pnp
+.pnp.js
+# @end @expo/next-adapter

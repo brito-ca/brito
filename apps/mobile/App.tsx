@@ -1,29 +1,40 @@
-import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
-import { Logo } from './components';
+import { StatusBar } from "expo-status-bar";
+import { SafeAreaView, ScrollView, StyleSheet, View } from "react-native";
+import { Card, Logo, Footer } from "./components";
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.content}>
-        <Logo />
-        <Text>Comming soon!</Text>
+    <SafeAreaView style={styles.safearea}>
+      <View style={styles.header}>
+        <Logo size="md" />
       </View>
+      <ScrollView>
+        <View style={styles.content}>
+          <Card />
+          <Card />
+          <Card />
+          <Footer />
+        </View>
+      </ScrollView>
       <StatusBar />
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: 'blue',
+  safearea: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "white",
+  },
+  header: {
+    paddingHorizontal: 24,
+    paddingBottom: 24,
   },
   content: {
-    alignItems: 'center',
-    gap: 20,
-    marginBottom: 100,
+    flex: 1,
+    flexWrap: "wrap",
+    flexDirection: "row",
+    gap: 32,
+    paddingHorizontal: 24,
   },
 });

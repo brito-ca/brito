@@ -11,6 +11,7 @@
         "build:esm": "tsc",
         "build:cjs": "tsc --module commonjs --outDir dist/cjs",
         "build:esbuild": "node esbuild.js && tsc --emitDeclarationOnly --outDir dist/esm && tsc --emitDeclarationOnly --outDir dist/cjs",
+        "dev": "rm -rf /dist && node esbuild.js && tsc --emitDeclarationOnly --outDir dist/esm && tsc --emitDeclarationOnly --outDir dist/cjs",
         "format": "prettier -w src",
         "lint": "eslint --fix src/**/*.ts*"
     },
